@@ -1,13 +1,214 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+  background: linear-gradient(0.25turn, #fbf3d8, white, #fbf3d8);
+  /*  font-family: "Source Serif Pro", serif;*/
+}
+
+/* ----- Navbar ---- */
+
+.navbar-container {
+  height: 12.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-between;
+  justify-content: center;
+  background-color: black;
+}
+
+#logo {
+  margin: 1.1rem;
+}
+.nav-links {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1.2rem 0;
+  background-color: black;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.nav-link {
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  color: white;
+}
+
+/* ----- Products ---- */
+
+.about-products {
+  height: 630px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-between;
+  justify-content: center;
+  background-image: url("./assets/jars-for-background-resized.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.about-products::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.about-products h1 {
+  position: relative;
+  color: #ffffff;
+  font-size: 2.5rem;
+  margin-top: 3rem;
+}
+
+.about-products p {
+  position: relative;
+  color: #ffffff;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  padding: 7% 10%;
+}
+
+/* ----- Cards ---- */
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 70%;
+  margin: 40px 0;
+}
+
+.honey-card {
+  display: flex;
+  position: relative;
+  height: 400px;
+  margin: 20px auto;
+  background-color: #ab722b;
+}
+
+.honey-card::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 200px solid transparent;
+  border-right: 100px solid #ab722b;
+  border-bottom: 200px solid transparent;
+  left: -100px;
+  z-index: 1;
+}
+
+.honey-card::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 200px solid transparent;
+  border-left: 100px solid #ab722b;
+  border-bottom: 200px solid transparent;
+  right: -100px;
+}
+
+.honey-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  width: 280px;
+  height: 400px;
+  padding: 1rem 0;
+  -webkit-transform: scale(0.98, 0.98);
+  -moz-transform: scale(0.98, 0.98);
+  transform: scale(0.98, 0.98);
+  z-index: 1;
+  background-color: white;
+}
+
+.honey-text::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 200px solid transparent;
+  border-right: 100px solid white;
+  border-bottom: 200px solid transparent;
+  left: -99px;
+}
+
+.honey-text::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 200px solid transparent;
+  border-left: 100px solid white;
+  border-bottom: 200px solid transparent;
+  right: -99px;
+}
+
+.honey-text h1 {
+  color: #312f17;
+}
+
+.honey-text p {
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+#jar-pic {
+  top: -100px;
+  padding: 2rem;
+}
+
+/* ----- Footer ---- */
+
+.footer-container {
+  width: 100%;
+  height: 12rem;
+  background-color: black;
+  color: white;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2.5rem;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
 }
