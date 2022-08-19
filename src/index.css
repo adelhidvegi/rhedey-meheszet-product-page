@@ -49,6 +49,32 @@
   letter-spacing: 0.1rem;
   text-decoration: none;
   color: white;
+  transition: all 2s;
+}
+
+.nav-link:hover {
+  font-style: oblique;
+}
+
+.nav-link::after {
+  position: absolute;
+  bottom: -2px;
+  left: -5%;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: white;
+  height: 2px;
+  transform: scale(0, 1);
+  transition: transform ease-out 0.25s;
+}
+
+.nav-link:hover::after {
+  width: 110%;
+  translate: transformX(-50%);
+  transform: scale(1, 1);
 }
 
 /* ----- Products ---- */
