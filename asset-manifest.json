@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/rhedey-meheszet-product-page/static/css/main.6cc260c8.css",
-    "main.js": "/rhedey-meheszet-product-page/static/js/main.9fd6cf8a.js",
+    "main.css": "/rhedey-meheszet-product-page/static/css/main.67e867af.css",
+    "main.js": "/rhedey-meheszet-product-page/static/js/main.a240397f.js",
     "static/js/787.48c3f874.chunk.js": "/rhedey-meheszet-product-page/static/js/787.48c3f874.chunk.js",
     "static/media/jars-for-background-resized.jpg": "/rhedey-meheszet-product-page/static/media/jars-for-background-resized.5e94c3afca735716ebed.jpg",
     "static/media/honey-jar-picture.jpg": "/rhedey-meheszet-product-page/static/media/honey-jar-picture.558a8543cd2ab506b5a3.jpg",
     "index.html": "/rhedey-meheszet-product-page/index.html",
-    "main.6cc260c8.css.map": "/rhedey-meheszet-product-page/static/css/main.6cc260c8.css.map",
-    "main.9fd6cf8a.js.map": "/rhedey-meheszet-product-page/static/js/main.9fd6cf8a.js.map",
+    "main.67e867af.css.map": "/rhedey-meheszet-product-page/static/css/main.67e867af.css.map",
+    "main.a240397f.js.map": "/rhedey-meheszet-product-page/static/js/main.a240397f.js.map",
     "787.48c3f874.chunk.js.map": "/rhedey-meheszet-product-page/static/js/787.48c3f874.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6cc260c8.css",
-    "static/js/main.9fd6cf8a.js"
+    "static/css/main.67e867af.css",
+    "static/js/main.a240397f.js"
   ]
 }
