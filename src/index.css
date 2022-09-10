@@ -5,11 +5,6 @@
 }
 
 .App {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 1rem;
-  background: linear-gradient(0.25turn, #fbf3d8, white, #fbf3d8);
   /*  font-family: "Source Serif Pro", serif;*/
 }
 
@@ -77,10 +72,9 @@
   transform: scale(1, 1);
 }
 
-/* ----- Products ---- */
+/* ---------- Products --------- */
 
 .about-products {
-  height: 630px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -118,7 +112,14 @@
   padding: 7% 10%;
 }
 
-/* ----- Cards ---- */
+/* ---------- Cards --------- */
+
+.product-listing-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .card-container {
   display: flex;
@@ -237,4 +238,54 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 3rem;
+}
+
+@media screen and (max-width: 450px) {
+  .card-container {
+    flex-direction: column;
+    width: auto;
+  }
+
+  .about-products h1 {
+    font-size: 1.7rem;
+    margin-top: 1.3rem;
+  }
+
+  .about-products p {
+    font-size: 0.9rem;
+    padding: 1rem 0.5rem;
+    text-align: center;
+  }
+
+  .honey-card {
+    background-color: white;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    height: auto;
+    margin: auto;
+  }
+
+  .honey-card::before,
+  .honey-card::after,
+  .honey-text::before,
+  .honey-text::after {
+    display: none;
+  }
+
+  .honey-text {
+    background-color: white;
+    font-size: 0.8rem;
+    height: auto;
+    gap: 1.5rem;
+  }
+
+  .honey-text p {
+    font-size: 0.9rem;
+  }
+
+  #jar-pic {
+    width: 16rem;
+    height: auto;
+    padding: 0;
+  }
 }
